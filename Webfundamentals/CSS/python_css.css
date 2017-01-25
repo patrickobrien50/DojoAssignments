@@ -1,0 +1,196 @@
+
+body {
+  font-family: arial, sans-serif;
+}
+
+.header{
+width: 970px;
+height: 125px;
+background-color: #3a77ab;
+text-align: right;
+}
+  .logo{
+    width: 346px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .search_bar_holder{
+  width: 270px;
+  height: 60px;
+  background-color: #444;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px #333;
+  }
+  .search_bar{
+    padding: 15px;
+    text-align: center;
+  }
+  .text_size{
+    display: inline-block;
+    margin-top: 10px;
+  }
+  button{
+    background-color: #265175;
+    color:white ;
+    font-size: 0.8em;
+    border-radius: 5px;
+    margin: 0 5px;
+    box-shadow: 2px 2px 1px #333;
+  }
+.nav_bar{
+width: 970px;
+height: 65px;
+background-color: #3a77ab;
+text-align: center;
+}
+  .tabs{
+  width: 900px;
+  height: 50px;
+  background-color: #265175;
+  display: inline-block;
+  margin-top: 5px;
+  list-style: none;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px #333;
+  }
+  .tabs ul{
+    list-style: none;
+    padding: 0px;
+  }
+  .tabs li{
+    display: inline;
+    font-size: 1.1em;
+    padding: 0 35px;
+  }
+  .tabs a{
+    text-decoration: none;
+    color: ghostwhite;
+  }
+.wrapper{
+width: 970px;
+height: 300px;
+background-color: #3a77ab;
+}
+  .list_links{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin-left: 100px;
+    vertical-align: top;
+    text-align: center;
+
+  }
+  .list_links ul{
+    list-style: none;
+    padding: 10px;
+  }
+  .list_links li{
+    padding-bottom: 10px;
+    text-decoration: none;
+  }
+   .list_links a{
+     color: ghostwhite;
+   }
+  .python_info{
+    width: 600px;
+    height: 290px;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    vertical-align: top;
+
+  }
+  .python_blurb{
+    font-size: .95em;
+    text-indent: 10px;
+    color: white;
+  }
+  .python_quotes{
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: yellow;
+    font-size: 20px;
+    }
+    .python_quoter{
+      color: white;
+
+    }
+.middle{
+  width: 970px;
+  height: 250px;
+  background-color: white;
+  text-align: center;
+
+}
+  .list1{
+    width: 400px;
+    height: 240px;
+    display: inline-block;
+    margin-top: 5px;
+    vertical-align: top;
+
+  }
+  .list1 p{
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .list1 ul{
+    font-size: 14px;
+  }
+  .list1 a{
+    text-decoration: none;
+    color: lightskyblue;
+  }
+  .list2{
+    width: 400px;
+    height: 240px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  .list2 p{
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .list2 ul{
+    font-size: 14px;
+  }
+  .list2 a{
+    text-decoration: none;
+    color: lightskyblue;
+  }
+
+.footer{
+width: 970px;
+height: 100px;
+background-color: #3a77ab;
+text-align: center;
+
+}
+  .resources{
+  width: 970px;
+  height: 40px;
+  background-color: #3a77ab;
+  display: inline-block;
+  margin-top: 30px;
+  }
+  .resources ul{
+    list-style: none;
+    padding: 0px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  .resources li{
+    list-style: none;
+    display: inline;
+    padding: 0 35px;
+  }
+  .resources a{
+    text-decoration: none;
+    color: lightskyblue;
+  }
