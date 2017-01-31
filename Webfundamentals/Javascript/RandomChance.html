@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    "use strict";
+    var bigOne = math.random;
+function jackpot(x){
+  var quarters = x;
+  for(quarters; quarters > 0; quarters--){
+    if((bigOne * 10) > 5){
+      if(math.floor(bigOne * 10) < 5){
+        bigOne += 5;
+      }
+      quarters += bigOne;
+    }
+    if((bigOne * 10) < 5){
+      console.log("loser");
+    }
+  }
+  return quarters;
+}
+
+jackpot(10)
+    </script>
+  </head>
+</html>
