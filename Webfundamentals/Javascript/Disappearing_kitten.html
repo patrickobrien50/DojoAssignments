@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Disappearing Kitten</title>
+  <style>
+img {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+button {
+  display: block;
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("img").click(function(){
+      $(this).hide(200);
+    });
+    $("button").click(function(){
+      $("img").show();
+    })
+  });
+  </script>
+</head>
+<body>
+<button id="restore">Restore the Kittens!</button>
+<img src="http://placekitten.com/g/300/300" alt="">
+<img src="http://placekitten.com/g/300/300" alt="">
+<img src="http://placekitten.com/g/300/300" alt="">
+<img src="http://placekitten.com/g/300/300" alt="">
+<img src="http://placekitten.com/g/300/300" alt="">
+<img src="http://placekitten.com/g/300/300" alt="">
+<img src="http://placekitten.com/g/300/300" alt="">
+<img src="http://placekitten.com/g/300/300" alt="">
+</body>
+</html>

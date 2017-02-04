@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <title>Contact Card</title>
+        <style>
+        	label {
+        		display: block;
+        	}
+        	#input {
+        		display: inline-block;
+        	}
+        	#output {
+        		display: inline-block;
+        	}
+        	#output div {
+        		border: 1px dashed #000;
+            s
+        	}
+            .initial {
+                height: 100px;
+                width: 100px;
+                margin: 5px;
+            }
+        </style>
+        <script type="text/javascript">
+        	$( document ).ready( function() {
+        		$( "button" ).click( function() {
+	        		$( "#output" ).append(
+	        			"<div class='initial'>" +
+		        			"<h3>" + $( "#first_name" ).val() + " " + $( "#last_name" ).val() +
+                            "</h3>" +
+		        			"<p>Click for description!</p>" +
+	        			"</div>");
+	        		//clear form
+	        		// $( "input, textarea" ).val(" ");
+	        		return false
+        		});
+        	});
+        	$( document ).on("click", ".initial", function() {
+        		// $( "#output p" ).html( $( "#descript" ).val());
+                $( "h3, p").toggle( function() {
+                    $( this ).replaceWith("<div>" + $( "#descript" ).val() +
+                        "</div>");
+                });
+        	});
+        </script>
+    </head>
+    <body>
+        <div id="container">
+        	<div id="input">
+        		<form>
+        			<label>
+        				First Name: <input id="first_name" type="text" name="first_name"/>
+        			</label>
+        			<label>
+        				Last Name: <input id="last_name" type="text" name="last_name"/>
+        			</label>
+        			<label>
+        				Description: <textarea id="descript" name="description"></textarea>
+        			</label>
+        			<button>Add User</button>
+        		</form>
+        	</div>
+        	<div id="output">
+
+        	</div>
+        </div>
+    </body>
+</html>

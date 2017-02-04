@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#form1").submit(function(){
+        var firstName = $("#form1").find('input[name="first_name"]').val();
+        var lastName = $("#form1").find('input[name="last_name"]').val();
+        var email = $("#form1").find('input[name="email"]').val();
+        var contact = $("#form1").find('input[name="contact_#"]').val();
+        var newUser = "<tr><td>" + firstName + "</td><td>" + lastName + "</td><td>" + email + "</td><td>" + contact + "</td></tr>";
+        $("#user_table").append(newUser);
+        $("#form1").each(function(){
+          this.reset();
+        })
+        return false;
+      })
+    });
+    </script>
+    <style>
+    .submit {
+      display: inline;
+    }
+    table th {
+    padding: 50px;
+    }
+    .border {
+      border: 1px solid black
+    }
+    </style>
+  </head>
+  <body>
+    <div class="border">
+      <table id="user_table">
+        <thead>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Contact #</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <form id="form1" action='#' method='post'>
+       First Name<input class='submit1' type='text' name='first_name'>
+       Last Name<input class="submit2" type='text' name='last_name'>
+       Email<input class="submit3" type='text' name='email'>
+       Contact #<input class="submit4" type='text' name='contact_#'>
+       <input class="btn" type='submit' value='Add User'>
+     </form>
+  </body>
+</html>

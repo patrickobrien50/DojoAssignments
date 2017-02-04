@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script>
+      $(document).ready(function(){
+        for(i = 1; i <= 151; i++){
+        var http = "http://pokeapi.co/media/img/";
+        var png = ".png";
+        var img = http + i + png;
+        console.log(img);
+        $(".pokedex").append("<img class="image" src='"+img+"'>");
+      };
+
+      })
+    </script>
+    <style>
+      .pokedex {
+        display: inline-block;
+      }
+      .pokemon {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="pokemon">
+      </div>
+    </div>
+  </body>
+</html>
