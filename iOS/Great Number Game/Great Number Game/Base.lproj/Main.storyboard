@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Great_Number_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zci-1U-vkO">
+                                <rect key="frame" x="166" y="226" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5AW-h3-uKX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fJR-V8-UwZ">
+                                <rect key="frame" x="110" y="179" width="155" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Great Number Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyB-kY-ERO">
+                                <rect key="frame" x="21" y="20" width="333" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number between 1 and 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5t-iK-enp">
+                                <rect key="frame" x="51" y="84" width="273" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kyB-kY-ERO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Aru-eG-z0R"/>
+                            <constraint firstItem="fJR-V8-UwZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="Dcx-uw-ijA"/>
+                            <constraint firstItem="fJR-V8-UwZ" firstAttribute="centerX" secondItem="Zci-1U-vkO" secondAttribute="centerX" id="DvE-Ki-9mP"/>
+                            <constraint firstItem="t5t-iK-enp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OUA-Ym-aGU"/>
+                            <constraint firstItem="t5t-iK-enp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="b87-Z1-5gO"/>
+                            <constraint firstItem="fJR-V8-UwZ" firstAttribute="centerX" secondItem="kyB-kY-ERO" secondAttribute="centerX" id="dRo-jV-3De"/>
+                            <constraint firstItem="Zci-1U-vkO" firstAttribute="top" secondItem="fJR-V8-UwZ" secondAttribute="bottom" constant="17" id="dec-AH-xEe"/>
+                            <constraint firstItem="kyB-kY-ERO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eNm-yr-xhU"/>
+                            <constraint firstItem="fJR-V8-UwZ" firstAttribute="top" secondItem="t5t-iK-enp" secondAttribute="bottom" constant="74" id="lcG-eK-L0E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberGuess" destination="fJR-V8-UwZ" id="FnN-wo-Uv0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
