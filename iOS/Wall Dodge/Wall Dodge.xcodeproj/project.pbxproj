@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C224C7E1E73A16F00E0F6B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224C7D1E73A16F00E0F6B8 /* AppDelegate.swift */; };
+		6C224C841E73A16F00E0F6B8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224C831E73A16F00E0F6B8 /* GameScene.swift */; };
+		6C224C861E73A16F00E0F6B8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224C851E73A16F00E0F6B8 /* GameViewController.swift */; };
+		6C224C891E73A16F00E0F6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C224C871E73A16F00E0F6B8 /* Main.storyboard */; };
+		6C224C8B1E73A16F00E0F6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C224C8A1E73A16F00E0F6B8 /* Assets.xcassets */; };
+		6C224C8E1E73A16F00E0F6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C224C8C1E73A16F00E0F6B8 /* LaunchScreen.storyboard */; };
+		6C224C991E73A17000E0F6B8 /* Wall_DodgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224C981E73A17000E0F6B8 /* Wall_DodgeTests.swift */; };
+		6C224CA41E73A17000E0F6B8 /* Wall_DodgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CA31E73A17000E0F6B8 /* Wall_DodgeUITests.swift */; };
+		6C224CB21E73A21C00E0F6B8 /* POCloudGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CB11E73A21C00E0F6B8 /* POCloudGenerator.swift */; };
+		6C224CB41E73A22C00E0F6B8 /* POCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CB31E73A22C00E0F6B8 /* POCloud.swift */; };
+		6C224CB61E73A23C00E0F6B8 /* POWallGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CB51E73A23C00E0F6B8 /* POWallGenerator.swift */; };
+		6C224CB91E73A25700E0F6B8 /* POWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CB81E73A25700E0F6B8 /* POWall.swift */; };
+		6C224CBC1E73A27D00E0F6B8 /* POHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CBB1E73A27D00E0F6B8 /* POHero.swift */; };
+		6C224CBE1E73A28800E0F6B8 /* POMovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CBD1E73A28800E0F6B8 /* POMovingGround.swift */; };
+		6C224CC01E73A28E00E0F6B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CBF1E73A28E00E0F6B8 /* Constants.swift */; };
+		6C224CC21E73A35400E0F6B8 /* POPointsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C224CC11E73A35400E0F6B8 /* POPointsLabel.swift */; };
+		6C224CC51E73C78800E0F6B8 /* Game Over sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6C224CC41E73C78800E0F6B8 /* Game Over sound.m4a */; };
+		6C224CC71E73C89400E0F6B8 /* Point.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C224CC61E73C89400E0F6B8 /* Point.mp3 */; };
+		6C224CC91E73CB1900E0F6B8 /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C224CC81E73CB1900E0F6B8 /* Music.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C224C951E73A17000E0F6B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C224C721E73A16F00E0F6B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C224C791E73A16F00E0F6B8;
+			remoteInfo = "Wall Dodge";
+		};
+		6C224CA01E73A17000E0F6B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C224C721E73A16F00E0F6B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C224C791E73A16F00E0F6B8;
+			remoteInfo = "Wall Dodge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C224C7A1E73A16F00E0F6B8 /* Wall Dodge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wall Dodge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C224C7D1E73A16F00E0F6B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C224C831E73A16F00E0F6B8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6C224C851E73A16F00E0F6B8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6C224C881E73A16F00E0F6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C224C8A1E73A16F00E0F6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C224C8D1E73A16F00E0F6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C224C8F1E73A16F00E0F6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C224C941E73A17000E0F6B8 /* Wall DodgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wall DodgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C224C981E73A17000E0F6B8 /* Wall_DodgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall_DodgeTests.swift; sourceTree = "<group>"; };
+		6C224C9A1E73A17000E0F6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C224C9F1E73A17000E0F6B8 /* Wall DodgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wall DodgeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C224CA31E73A17000E0F6B8 /* Wall_DodgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall_DodgeUITests.swift; sourceTree = "<group>"; };
+		6C224CA51E73A17000E0F6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C224CB11E73A21C00E0F6B8 /* POCloudGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCloudGenerator.swift; sourceTree = "<group>"; };
+		6C224CB31E73A22C00E0F6B8 /* POCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCloud.swift; sourceTree = "<group>"; };
+		6C224CB51E73A23C00E0F6B8 /* POWallGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POWallGenerator.swift; sourceTree = "<group>"; };
+		6C224CB81E73A25700E0F6B8 /* POWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POWall.swift; sourceTree = "<group>"; };
+		6C224CBB1E73A27D00E0F6B8 /* POHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POHero.swift; sourceTree = "<group>"; };
+		6C224CBD1E73A28800E0F6B8 /* POMovingGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POMovingGround.swift; sourceTree = "<group>"; };
+		6C224CBF1E73A28E00E0F6B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6C224CC11E73A35400E0F6B8 /* POPointsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POPointsLabel.swift; sourceTree = "<group>"; };
+		6C224CC41E73C78800E0F6B8 /* Game Over sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Game Over sound.m4a"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Game Over sound.m4a"; sourceTree = "<group>"; };
+		6C224CC61E73C89400E0F6B8 /* Point.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Point.mp3; path = ../../../../Downloads/Point.mp3; sourceTree = "<group>"; };
+		6C224CC81E73CB1900E0F6B8 /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Music.mp3; path = ../../../../Downloads/Music.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C224C771E73A16F00E0F6B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C224C911E73A17000E0F6B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C224C9C1E73A17000E0F6B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C224C711E73A16F00E0F6B8 = {
+			isa = PBXGroup;
+			children = (
+				6C224C7C1E73A16F00E0F6B8 /* Wall Dodge */,
+				6C224C971E73A17000E0F6B8 /* Wall DodgeTests */,
+				6C224CA21E73A17000E0F6B8 /* Wall DodgeUITests */,
+				6C224C7B1E73A16F00E0F6B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C224C7B1E73A16F00E0F6B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C224C7A1E73A16F00E0F6B8 /* Wall Dodge.app */,
+				6C224C941E73A17000E0F6B8 /* Wall DodgeTests.xctest */,
+				6C224C9F1E73A17000E0F6B8 /* Wall DodgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C224C7C1E73A16F00E0F6B8 /* Wall Dodge */ = {
+			isa = PBXGroup;
+			children = (
+				6C224C7D1E73A16F00E0F6B8 /* AppDelegate.swift */,
+				6C224C831E73A16F00E0F6B8 /* GameScene.swift */,
+				6C224C851E73A16F00E0F6B8 /* GameViewController.swift */,
+				6C224CB71E73A24300E0F6B8 /* Cloud Generator */,
+				6C224CBA1E73A26200E0F6B8 /* Wall Generator */,
+				6C224C871E73A16F00E0F6B8 /* Main.storyboard */,
+				6C224CC31E73A37A00E0F6B8 /* Labels */,
+				6C224CBB1E73A27D00E0F6B8 /* POHero.swift */,
+				6C224CBF1E73A28E00E0F6B8 /* Constants.swift */,
+				6C224CBD1E73A28800E0F6B8 /* POMovingGround.swift */,
+				6C224C8A1E73A16F00E0F6B8 /* Assets.xcassets */,
+				6C224C8C1E73A16F00E0F6B8 /* LaunchScreen.storyboard */,
+				6C224CC81E73CB1900E0F6B8 /* Music.mp3 */,
+				6C224CC61E73C89400E0F6B8 /* Point.mp3 */,
+				6C224CC41E73C78800E0F6B8 /* Game Over sound.m4a */,
+				6C224C8F1E73A16F00E0F6B8 /* Info.plist */,
+			);
+			path = "Wall Dodge";
+			sourceTree = "<group>";
+		};
+		6C224C971E73A17000E0F6B8 /* Wall DodgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C224C981E73A17000E0F6B8 /* Wall_DodgeTests.swift */,
+				6C224C9A1E73A17000E0F6B8 /* Info.plist */,
+			);
+			path = "Wall DodgeTests";
+			sourceTree = "<group>";
+		};
+		6C224CA21E73A17000E0F6B8 /* Wall DodgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C224CA31E73A17000E0F6B8 /* Wall_DodgeUITests.swift */,
+				6C224CA51E73A17000E0F6B8 /* Info.plist */,
+			);
+			path = "Wall DodgeUITests";
+			sourceTree = "<group>";
+		};
+		6C224CB71E73A24300E0F6B8 /* Cloud Generator */ = {
+			isa = PBXGroup;
+			children = (
+				6C224CB11E73A21C00E0F6B8 /* POCloudGenerator.swift */,
+				6C224CB31E73A22C00E0F6B8 /* POCloud.swift */,
+			);
+			name = "Cloud Generator";
+			sourceTree = "<group>";
+		};
+		6C224CBA1E73A26200E0F6B8 /* Wall Generator */ = {
+			isa = PBXGroup;
+			children = (
+				6C224CB51E73A23C00E0F6B8 /* POWallGenerator.swift */,
+				6C224CB81E73A25700E0F6B8 /* POWall.swift */,
+			);
+			name = "Wall Generator";
+			sourceTree = "<group>";
+		};
+		6C224CC31E73A37A00E0F6B8 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				6C224CC11E73A35400E0F6B8 /* POPointsLabel.swift */,
+			);
+			name = Labels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C224C791E73A16F00E0F6B8 /* Wall Dodge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C224CA81E73A17000E0F6B8 /* Build configuration list for PBXNativeTarget "Wall Dodge" */;
+			buildPhases = (
+				6C224C761E73A16F00E0F6B8 /* Sources */,
+				6C224C771E73A16F00E0F6B8 /* Frameworks */,
+				6C224C781E73A16F00E0F6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wall Dodge";
+			productName = "Wall Dodge";
+			productReference = 6C224C7A1E73A16F00E0F6B8 /* Wall Dodge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C224C931E73A17000E0F6B8 /* Wall DodgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C224CAB1E73A17000E0F6B8 /* Build configuration list for PBXNativeTarget "Wall DodgeTests" */;
+			buildPhases = (
+				6C224C901E73A17000E0F6B8 /* Sources */,
+				6C224C911E73A17000E0F6B8 /* Frameworks */,
+				6C224C921E73A17000E0F6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C224C961E73A17000E0F6B8 /* PBXTargetDependency */,
+			);
+			name = "Wall DodgeTests";
+			productName = "Wall DodgeTests";
+			productReference = 6C224C941E73A17000E0F6B8 /* Wall DodgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C224C9E1E73A17000E0F6B8 /* Wall DodgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C224CAE1E73A17000E0F6B8 /* Build configuration list for PBXNativeTarget "Wall DodgeUITests" */;
+			buildPhases = (
+				6C224C9B1E73A17000E0F6B8 /* Sources */,
+				6C224C9C1E73A17000E0F6B8 /* Frameworks */,
+				6C224C9D1E73A17000E0F6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C224CA11E73A17000E0F6B8 /* PBXTargetDependency */,
+			);
+			name = "Wall DodgeUITests";
+			productName = "Wall DodgeUITests";
+			productReference = 6C224C9F1E73A17000E0F6B8 /* Wall DodgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C224C721E73A16F00E0F6B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Patrick O'Brien";
+				TargetAttributes = {
+					6C224C791E73A16F00E0F6B8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2S3D8J8M3T;
+						ProvisioningStyle = Automatic;
+					};
+					6C224C931E73A17000E0F6B8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2S3D8J8M3T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C224C791E73A16F00E0F6B8;
+					};
+					6C224C9E1E73A17000E0F6B8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2S3D8J8M3T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C224C791E73A16F00E0F6B8;
+					};
+				};
+			};
+			buildConfigurationList = 6C224C751E73A16F00E0F6B8 /* Build configuration list for PBXProject "Wall Dodge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C224C711E73A16F00E0F6B8;
+			productRefGroup = 6C224C7B1E73A16F00E0F6B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C224C791E73A16F00E0F6B8 /* Wall Dodge */,
+				6C224C931E73A17000E0F6B8 /* Wall DodgeTests */,
+				6C224C9E1E73A17000E0F6B8 /* Wall DodgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C224C781E73A16F00E0F6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C224C891E73A16F00E0F6B8 /* Main.storyboard in Resources */,
+				6C224CC71E73C89400E0F6B8 /* Point.mp3 in Resources */,
+				6C224C8B1E73A16F00E0F6B8 /* Assets.xcassets in Resources */,
+				6C224CC91E73CB1900E0F6B8 /* Music.mp3 in Resources */,
+				6C224CC51E73C78800E0F6B8 /* Game Over sound.m4a in Resources */,
+				6C224C8E1E73A16F00E0F6B8 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C224C921E73A17000E0F6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C224C9D1E73A17000E0F6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C224C761E73A16F00E0F6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C224C841E73A16F00E0F6B8 /* GameScene.swift in Sources */,
+				6C224C861E73A16F00E0F6B8 /* GameViewController.swift in Sources */,
+				6C224CB61E73A23C00E0F6B8 /* POWallGenerator.swift in Sources */,
+				6C224CB21E73A21C00E0F6B8 /* POCloudGenerator.swift in Sources */,
+				6C224CBC1E73A27D00E0F6B8 /* POHero.swift in Sources */,
+				6C224CC01E73A28E00E0F6B8 /* Constants.swift in Sources */,
+				6C224CB41E73A22C00E0F6B8 /* POCloud.swift in Sources */,
+				6C224CC21E73A35400E0F6B8 /* POPointsLabel.swift in Sources */,
+				6C224CB91E73A25700E0F6B8 /* POWall.swift in Sources */,
+				6C224C7E1E73A16F00E0F6B8 /* AppDelegate.swift in Sources */,
+				6C224CBE1E73A28800E0F6B8 /* POMovingGround.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C224C901E73A17000E0F6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C224C991E73A17000E0F6B8 /* Wall_DodgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C224C9B1E73A17000E0F6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C224CA41E73A17000E0F6B8 /* Wall_DodgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C224C961E73A17000E0F6B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C224C791E73A16F00E0F6B8 /* Wall Dodge */;
+			targetProxy = 6C224C951E73A17000E0F6B8 /* PBXContainerItemProxy */;
+		};
+		6C224CA11E73A17000E0F6B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C224C791E73A16F00E0F6B8 /* Wall Dodge */;
+			targetProxy = 6C224CA01E73A17000E0F6B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C224C871E73A16F00E0F6B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C224C881E73A16F00E0F6B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C224C8C1E73A16F00E0F6B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C224C8D1E73A16F00E0F6B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C224CA61E73A17000E0F6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C224CA71E73A17000E0F6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C224CA91E73A17000E0F6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2S3D8J8M3T;
+				INFOPLIST_FILE = "Wall Dodge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elysia.Wall-Dodge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6C224CAA1E73A17000E0F6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2S3D8J8M3T;
+				INFOPLIST_FILE = "Wall Dodge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elysia.Wall-Dodge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6C224CAC1E73A17000E0F6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2S3D8J8M3T;
+				INFOPLIST_FILE = "Wall DodgeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elysia.Wall-DodgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wall Dodge.app/Wall Dodge";
+			};
+			name = Debug;
+		};
+		6C224CAD1E73A17000E0F6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2S3D8J8M3T;
+				INFOPLIST_FILE = "Wall DodgeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elysia.Wall-DodgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wall Dodge.app/Wall Dodge";
+			};
+			name = Release;
+		};
+		6C224CAF1E73A17000E0F6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2S3D8J8M3T;
+				INFOPLIST_FILE = "Wall DodgeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elysia.Wall-DodgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Wall Dodge";
+			};
+			name = Debug;
+		};
+		6C224CB01E73A17000E0F6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2S3D8J8M3T;
+				INFOPLIST_FILE = "Wall DodgeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elysia.Wall-DodgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Wall Dodge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C224C751E73A16F00E0F6B8 /* Build configuration list for PBXProject "Wall Dodge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C224CA61E73A17000E0F6B8 /* Debug */,
+				6C224CA71E73A17000E0F6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C224CA81E73A17000E0F6B8 /* Build configuration list for PBXNativeTarget "Wall Dodge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C224CA91E73A17000E0F6B8 /* Debug */,
+				6C224CAA1E73A17000E0F6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C224CAB1E73A17000E0F6B8 /* Build configuration list for PBXNativeTarget "Wall DodgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C224CAC1E73A17000E0F6B8 /* Debug */,
+				6C224CAD1E73A17000E0F6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C224CAE1E73A17000E0F6B8 /* Build configuration list for PBXNativeTarget "Wall DodgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C224CAF1E73A17000E0F6B8 /* Debug */,
+				6C224CB01E73A17000E0F6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C224C721E73A16F00E0F6B8 /* Project object */;
+}
